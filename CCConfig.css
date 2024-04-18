@@ -16,7 +16,7 @@ body, html {
 which spans the whole space of the screen, sets it to fixed so it goes away when you scroll
  */
 .background-image-container {
-    height: 100vh;
+    height: calc(100vh - 50px);
     background: url('HomepageBackground.png') no-repeat center center fixed;
     background-size: cover;
     display: flex;
@@ -64,7 +64,7 @@ main {
 }
 .firstMessage p {
     color: black;
-    max-width: 900px;
+    max-width: 12000px;
     margin: 0 auto;
     font-size: 1.1em;
 }
