@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background: rgb(223, 72, 7);
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+}
+.footerLinks a{
+    display: inline-block;
+    text-decoration: underline;
+    margin-right: 20px;; /* Add margin to the left */
+    padding: 10px 20px;
+    background: rgb(223, 72, 7);
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}

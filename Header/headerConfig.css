@@ -1,0 +1,250 @@
+/*Positions the top header for the navigation links. Make it so it stays when
+scrolling and will be transparent and at the to */
+header {
+    user-select: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Gray translucent background */
+    color: #fff;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Add padding to both sides of the header */
+}
+
+/*logo container css */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#headerLogo {
+    height: auto;
+    width: 5em; /* Adjust as needed */
+}
+
+.logo-container p {
+    color: white;
+    margin-left: 10px; /* Spacing between logo and text */
+    font-size: 1.5em;
+}
+
+.navigation {
+    color: white;
+    position: relative;
+    text-align: right;
+}
+/*CSS for the default navigation */
+.defaultNav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    transition: transform 0.3s ease;
+}
+
+
+
+/*CSS for the dropdown menu */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 3em;
+}
+.rotated {
+    transform: rotate(90deg); /* Rotate button by 90 degrees */
+}
+.dropdown-content {
+    font-size: 2em;
+    display: none;
+    right: 0;
+    top: 100%;
+    min-width: 100px; /* Set a min-width or change as needed */
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block; /* Ensures each link is on a new line */
+    padding: 10px; /* Add padding for better spacing, adjust as needed */
+    width: auto;
+}
+
+.dropdownItem {
+    font-size: 1em;
+}
+/*Keyframe for the pop animation*/
+@keyframes popEffect {
+    0% {
+        transform: scale(1);   /* Start at normal size */
+    }
+    50% {
+        transform: scale(1.1); /* Scale up to 110% */
+    }
+    100% {
+        transform: scale(1);   /* Scale back to normal size */
+    }
+}
+/*Hover animation for navigation elements*/
+
+.dropdown-item-animated {
+    animation: popEffect 1s ease-out;
+}
+.defaultNavItem {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.defaultNavItem:hover{
+   transform: scale(1.1);
+}
+
+/*Style for Language Button and Dropdown*/
+.languageDropdown {
+    display: inline-block;
+    position: relative;
+}
+#languageArrow {
+    display: inline-block;
+}
+.languageDropdownButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.3em;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.languageDropdownList {
+    display: none; /* Hidden by default */
+    background-color: transparent;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding-top: 0.3em;
+    font-size: 0.9em;
+}
+.show-dropdown {
+    display: block;
+}
+/* Dropdown menu items */
+.languageDropdownList a {
+    display: block; /* This will stack them vertically */
+    padding: 5px;
+}
+
+
+
+/*CSS for if the display is smaller than 800px*/
+
+
+
+@media (max-width: 700px) {
+    .navigation {
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /* Ensure the header spans the full width */
+        box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 4em; /* Adjust the size as needed */
+        width: auto; /* Set a fixed width to the menu button */
+        text-align: center; /* Center the text (☰ symbol) inside the button */
+        background: none;
+        border: none;
+        color: white;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .dropdown-content {
+        font-size: 2em;
+        display: block;
+        max-height: 0;
+        width: auto;
+        overflow: hidden;
+        box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+    }
+
+    .logo-container {
+        display: none;
+    }
+
+    .defaultNav {
+        display: none;
+    }
+}
+/*CSS for if the screen is between x and x pixels*/
+@media (min-width: 700px) and (max-width: 1100px) {
+    .defaultNav {
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+    .logo-container {
+        display: none;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /* Ensure the header spans the full width */
+        box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+    }
+}
+
+/*CSS for the phone languages dropdown*/
+.buttonContainerD {
+    align-self: center;
+}
+.languageDropdownButtonD {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+    position: relative;
+    font-size: 1em;
+    display: inline-block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#languageArrowD {
+    display: inline-block;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.languageDropdownListD {
+    height: 0;
+    display: block; /* Hidden by default */
+    background-color: transparent;
+    font-size: 0.7em;
+    text-align: center;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.DDropdownContent {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
