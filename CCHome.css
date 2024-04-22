@@ -1,0 +1,370 @@
+
+
+
+/*Defines the background image at the top, background image is only for DIV element
+which spans the whole space of the screen, sets it to fixed so it goes away when you scroll
+ */
+.background-image-container {
+    height: calc(100vh - 50px);
+    background: url('HomepageBackground.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.background-image-container div {
+    text-align: center;
+}
+
+/*Defines styling for the name element
+ */
+.name {
+    margin-bottom: 20px;
+    font-size: 3em;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+}
+
+/*sets styling for main element
+ */
+.mainHeaders {
+    color: rgb(223, 72, 7);
+    text-align: center;
+    padding-top: 50px;
+    font-size: 3em;
+    margin-top: 100px;
+}
+
+
+/*Styping for Turing image and text */
+main {
+    background: #ffffff;
+    margin-bottom: 1vh;
+    display: block;
+}
+
+.firstMessage {
+    font-size: 2.1em;
+    color: rgb(223, 72, 7);
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+}
+.firstMessage p {
+    color: black;
+    max-width: 12000px;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+.Turing {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding-top: 100px;
+}
+
+.Turing img {
+    margin-left: 100px;
+    width: 30em;
+    height: auto;
+    display: inline-block;
+}
+
+.TuringText {
+    margin-left: 30px; /* Add space between image and caption */
+    margin-right: 100px;
+    font-size: 1.5em;
+}
+.TuringLink {
+    text-align: right;
+}
+.TuringLink a{
+    display: inline-block;
+    margin-right: 20px;; /* Add margin to the left */
+    padding: 10px 20px;
+    background: rgb(223, 72, 7);
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/*Styling for Turing if smaller screen */
+@media screen and (max-width: 950px) {
+    .Turing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Turing img {
+        margin-bottom: 20px;
+    }
+
+    .TuringText,
+    .TuringLink {
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: left;
+    }
+
+    .TuringLink a {
+        margin-right: 0;
+    }
+}
+
+
+
+/*Styling for the C section */
+.C {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding-top: 100px;
+}
+
+.C img {
+    width: 20em;
+    height: auto;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.CText {
+    margin-right: 30px;
+    margin-left: 100px;
+    font-size: 1.5em;
+}
+.CLink {
+    text-align: left;
+}
+.CLink a{
+    display: inline-block;
+    margin-right: 20px;; /* Add margin to the left */
+    padding: 10px 20px;
+    background: rgb(223, 72, 7);
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 950px) {
+    .C {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+        margin-left: 30px;
+    }
+
+    .C img {
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 20px; /* Add space between image and text */
+    }
+
+    .CText,
+    .CLink {
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: left;
+    }
+
+    .CLink a {
+        margin-right: 0;
+    }
+
+    .C img {
+        order: -1; /* Move image to the top */
+    }
+}
+
+
+/*Styling for the Java section */
+
+.Java {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding-top: 100px;
+}
+
+.Java img {
+    width: 40em;
+    height: auto;
+    display: inline-block;
+}
+
+.JavaText {
+    margin-left: 30px; /* Add space between image and caption */
+    margin-right: 100px;
+    font-size: 1.5em;
+}
+
+
+
+/*Styling for Turing if smaller screen */
+@media screen and (max-width: 950px) {
+    .Java {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Java img {
+        margin-bottom: 20px;
+        width: 30em;
+    }
+
+    .JavaText {
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: left;
+    }
+
+}
+
+/*Styling for the Python section */
+.Python {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding-top: 100px;
+}
+
+.Python img {
+    width: 25em;
+    height: auto;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.PythonText {
+    margin-right: 30px;
+    margin-left: 100px;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 950px) {
+    .Python {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+        margin-left: 30px;
+    }
+
+    .Python img {
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 20px; /* Add space between image and text */
+    }
+
+    .PythonText {
+        margin: 0 auto;
+    }
+
+    .Python img {
+        order: -1; /* Move image to the top */
+    }
+
+
+
+}
+
+/*Styling for the Others section */
+
+.Others {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding-top: 100px;
+}
+.OthersImageContainer {
+    margin-left: 30px;
+    font-style: italic;
+}
+.Others img {
+    width: 20em;
+    height: auto;
+    display: inline-block;
+}
+
+.OthersText {
+    margin-left: 30px; /* Add space between image and caption */
+    margin-right: 100px;
+    font-size: 1.5em;
+}
+
+
+
+/*Styling for Turing if smaller screen */
+@media screen and (max-width: 950px) {
+    .Others {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Others img {
+        margin-bottom: 20px;
+        width: 30em;
+    }
+
+    .OthersText {
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: left;
+    }
+
+}
+
+
+
+.Future {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding-top: 100px;
+}
+
+.Future img {
+    width: 30em;
+    height: auto;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.FutureText {
+    margin-right: 30px;
+    margin-left: 100px;
+    font-size: 1.5em;
+}
+
+
+@media screen and (max-width: 950px) {
+    .Future {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+        margin-left: 30px;
+    }
+
+    .Future img {
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 20px; /* Add space between image and text */
+    }
+
+    .FutureText{
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: left;
+    }
+
+    .Future img {
+        order: -1; /* Move image to the top */
+    }
+}

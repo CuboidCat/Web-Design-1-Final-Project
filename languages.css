@@ -1,0 +1,45 @@
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1.7em;
+}
+table table tr td:first-child {
+    color: rgb(223, 72, 7);
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: left;
+}
+
+.content {
+    display: none;
+    font-size: 1.8em;
+}
+
+.content h2 {
+    color: rgb(223, 72, 7);
+    text-align: center;
+}
+
+.content p {
+    margin-left: 30px;
+}
+
+h1 {
+    color: rgb(223, 72, 7);
+    text-align: center;
+    font-size: 2.5em;
+
+}
+@media (max-width: 1300px) {
+    table {
+        display: none;
+    }
+    .content {
+        display: block;
+    }
+}
+

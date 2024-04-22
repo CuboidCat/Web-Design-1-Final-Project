@@ -1,0 +1,92 @@
+.backgroundElement {
+    height: calc(50vh);
+    background: url('foundingFathers.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#startingOut {
+    font-size: 1.5em;
+    text-align: center;
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-bottom: 10em;
+}
+#startingOut h1 {
+    color: rgb(223, 72, 7);
+}
+
+
+
+
+/* Grid Container */
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.gridContainer div {
+    border: black 1px solid;
+    padding: 20px;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.gridContainer div h1 {
+    color: rgb(223, 72, 7);
+}
+
+
+.video {
+    display: block;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 1.5em;
+    align-items: center;
+}
+
+.video h1 {
+    color: rgb(223, 72, 7);
+
+}
+.videoLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.video video {
+    width: 100% !important;
+    height: auto !important;
+}
+
+@media (max-width: 1000px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .video video{
+        padding-top: 50px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    #startingOut {
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-bottom: 10em;
+    }
+}

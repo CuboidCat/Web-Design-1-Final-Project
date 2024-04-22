@@ -1,6 +1,10 @@
+* {
+    font-family: sans-serif, 'Verdana';
+}
 /*Positions the top header for the navigation links. Make it so it stays when
 scrolling and will be transparent and at the to */
 header {
+    max-width: 100vw;
     user-select: none;
     position: fixed;
     top: 0;
@@ -151,10 +155,14 @@ header {
 @media (max-width: 700px) {
     .navigation {
         text-align: center;
-        width: 100%;
+        width: auto;
+        max-width: 300px;
     }
 
     header {
+        max-width: 100vw;
+        margin-left: 0;
+        padding-left: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -202,6 +210,9 @@ header {
         display: none;
     }
     header {
+        max-width: 100vw;
+        margin-left: 0;
+        padding-left: 0;
         display: flex;
         flex-direction: column;
         align-items: center;

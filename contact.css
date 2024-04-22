@@ -1,0 +1,41 @@
+main {
+    padding-top: 100px;
+}
+main h1 {
+    color: rgb(223, 72, 7);
+    font-size: 3em;
+
+}
+.contentHead {
+    padding-left: 100px;
+}
+section h2 {
+    color: rgb(223, 72, 7);
+    font-size: 2em;
+
+}
+form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: rgb(223, 72, 7);
+    color: white;
+    cursor: pointer;
+}
+

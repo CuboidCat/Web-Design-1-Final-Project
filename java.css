@@ -1,0 +1,8 @@
+.backgroundElement {
+    height: calc(100vh - 50px);
+    background: url('JavaCreator.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}

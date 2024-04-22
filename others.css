@@ -1,0 +1,27 @@
+.content {
+    font-size: 1.8em;
+}
+
+.backgroundElement {
+    height: calc(100vh - 50px);
+    background: url('others2.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+ul {
+    list-style-type: circle;
+    padding: 20px;
+    margin-left: 20px;
+}
+ul li {
+    margin-bottom: 5px;
+}

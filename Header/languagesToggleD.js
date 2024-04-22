@@ -10,8 +10,6 @@ function onload() {
     const tempMenu = menu.style.display;
     const tempDropdown = dropdown.style.display;
 
-
-    nav
     menu.style.display = 'block';
     dropdown.style.display = 'block';
     dropdownList.style.height = 'auto';

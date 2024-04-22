@@ -5,21 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History of Programming</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/ProgrammingLogo.webp">
-    <link rel="stylesheet" href="/CCConfig.css">
-    <link rel="stylesheet" href="/Header/headerConfig.css">
-    <link rel="stylesheet" href="/Footer.css">
-
-</head>
-<body>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History of Programming</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="/ProgrammingLogo.webp">
-    <link rel="stylesheet" href="CCConfig.css">
+    <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="Header/headerConfig.css">
     <link rel="stylesheet" href="Footer.css">
 
@@ -48,8 +34,8 @@
                 </div>
             </div>
             <script type="text/javascript" src="Header/languagesToggleD.js"></script>
-            <a href="contact.html" id="contactUs" class="dropdownItem phoneNav">Contact Us</a>
             <a href="future.html" id="Future" class="dropdownItem phoneNav">The Future</a>
+            <a href="contact.html" id="contactUs" class="dropdownItem phoneNav">Contact Us</a>
         </div>
         <script type="text/javascript" src="Header/menuToggle.js"></script>
         <div class="defaultNav">
@@ -77,9 +63,31 @@
 </header>
 <script type="text/javascript" src="Header/adjustHeight.js"></script>
 <main>
+    <div class="contentHead">
+    <h1>Contact Us</h1>
+    <p>Please leave your feedback and contact information below:</p>
+    </div>
+    <form>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <small>Format: 123-456-7890</small><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+
+        <label for="feedback">Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <section class="contentHead">
+        <h2>Contact Information</h2>
+        <p>Email: info@historyofprogramming.com</p>
+        <p>Phone Number: 123-456-7890</p>
+    </section>
 
 </main>
-
 
 <footer>
     <div class="footerText">
