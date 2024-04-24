@@ -3,7 +3,7 @@ let headerHeight = '';
 
 
 function adjustHeader() {
-    var dropdownList = document.querySelector('.languageDropdownList');
+    const dropdownList = document.querySelector('.languageDropdownList');
     // Select the header element by its class or id
     const header = document.getElementById('header'); // Assuming the header has an id of "header"
 
@@ -16,7 +16,6 @@ function adjustHeader() {
     else {
         if (headerHeight === '' && dropdownList.style.display === 'block') {
             headerHeight = header.style.paddingBottom;
-
         }
         if(dropdownList.style.display === 'block' && header.style.paddingBottom === '0px') {
             console.log('here')
